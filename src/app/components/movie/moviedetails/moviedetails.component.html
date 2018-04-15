@@ -1,0 +1,31 @@
+<div class="moviedetailscontent">
+  <aside>
+    <img [src]="movieImage" alt="">
+  </aside>
+  <article class="movieContent_right">
+    <ul>
+      <li>
+        片名:
+        <strong [innerHTML]="moviename"></strong>
+      </li>
+      <li>
+        影片打分:
+        <span>{{moviepoint}}</span>
+      </li>
+      <li>
+        主演:
+        <span>{{movierole}}</span>
+      </li>
+      <li>
+        分类:
+        <span>{{moviegenres}}</span>
+      </li>
+      <li>
+        <button nz-button [nzType]="'primary'">
+          <a [href]="moviehref">播放</a>
+        </button>
+      </li>
+    </ul>
+
+  </article>
+</div>
